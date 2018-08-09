@@ -15,3 +15,12 @@ Technologies used:
   - [x] Include UIKit 
   - [ ] Design User Interface(with UIKit)
   - [ ] deploy(AWS, GCP, DO)
+
+
+# How to run the project on localhost
+
+- Install Download Node.js
+- navigate to this project folder with cmd (or just use the Node.js Command Prompt that comes with it)
+- Use command "npm install" to install all dependencies, make sure the "package.json" is at the root(which should already is)
+- Use commant "npm start" to run the server(default is localhost:8000, as defined in the /bin/.www file, you can change it to other ports if you want at the file).
+- Use any browser to access it(Browsers IE8 or later, any modern, up-to-date browsers should work) by typing "localhost:8000" in the address bar.
