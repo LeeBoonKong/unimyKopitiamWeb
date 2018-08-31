@@ -1,2 +1,24 @@
-<h1>{{title}}</h1>
-<p>Welcome to {{title}}</p>
+<div class="uk-container">
+    <form action="/post-confession" method="POST" class="uk-margin">
+       <fieldset class="uk-fieldset">
+            <legend class="uk-legend">Your Confession Here:</legend>
+
+            <div class="uk-margin">
+                <textarea class="uk-textarea" name="confessionText" id="confessionText" cols="30" rows="10"></textarea>
+            </div>
+
+            <button class="uk-button uk-align-center" type="submit">Submit</button>
+        </fieldset>
+    </form>
+</div>
+
+<div class="uk-container">
+    {{#each confession}}
+    <div class="uk-card">
+        <div>Code: {{confession.code}}</div>
+        <div>Confession: </div>
+        <div>{{confession.content}}</div>
+    </div>
+    {{/each}}
+</div>
+
