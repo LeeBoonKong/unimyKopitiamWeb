@@ -1,7 +1,6 @@
 var express = require('express');
 var router = express.Router();
-var url="mongodb://leeboonkong:hhdqJRDHDcBJ0q3q@unimykopitiamcluster-shard-00-00-ffk6e.gcp.mongodb.net:27017,unimykopitiamcluster-shard-00-01-ffk6e.gcp.mongodb.net:27017,unimykopitiamcluster-shard-00-02-ffk6e.gcp.mongodb.net:27017/test?ssl=true&replicaSet=UnimyKopitiamCluster-shard-0&authSource=admin&retryWrites=true"
-var url2="localhost:27017/test"
+var url="localhost:27017/test"
 var mongoose = require('mongoose');
 
 mongoose.connect(url);
